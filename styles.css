@@ -1,0 +1,196 @@
+/*--FONTS--*/
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+/*--RESET & GENERAL--*/
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: none;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+}
+html, body {
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ol, ul {
+    list-style: none;
+}
+input, textarea {
+    font: inherit;
+    color: white;
+}
+/*--BODY--*/
+ body {
+    font: 400 16px/30px 'Lato', sans-serif;
+    color: #4f4f4f;
+    background: #f4f1ed;
+}
+p {
+    margin: 0 0 15px 0;
+}
+a {
+    text-decoration: none;
+}
+/*--ALL WRAPPERS--*/
+ header, #banner, #posts {
+    width: auto;
+    padding: 50px 0;
+    overflow: hidden;
+}
+header div, #banner div, #posts {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*--HEADER--*/
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background: white;
+}
+header > div.content {
+    padding: 25px 0 25px 0;
+}
+header #logo {
+    width: 58px;
+    height: 58px;
+    float: left;
+}
+.dropdown {
+    display: block;
+}
+header nav ul {
+    margin-top: 14px;
+}
+header nav ul.left {
+    float: left;
+}
+header nav ul.right{
+    float: right;
+}
+header nav li {
+    padding-left: 30px;
+    display: inline;
+}
+header nav li a {
+    color: #b1b1b1;
+    font: 400 16px 'Lato', sans-serif;
+}
+header nav li a:hover {
+    color: #4f4f4f;
+}
+/*--BANNER--*/
+#banner {
+    background: white url("img.svg") no-repeat top center;
+}
+#banner h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 32px 0 65px 0;
+    font:  400 34px 'Droid Serif', serif;
+}
+/*--POST--*/
+.post {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    border-radius: 6px;
+    background: white;
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(174,174,174,0.22);
+    -moz-box-shadow: 0px 2px 1px 0px rgba(174,174,174,0.22);
+    box-shadow: 0px 2px 1px 0px rgba(174,174,174,0.22);
+}
+.post:nth-child(n) {
+    margin: 0 1em 1em 0;
+}
+.post h3 {
+    padding: 40px;
+    font: 400 16px 'Droid Serif', serif;
+    color: #4f4f4f;
+}
+.post h3 span{
+    font: 300 16px 'Lato', sans-serif;
+    float: right;
+}
+.post .author {
+    padding: 10px 0 10px 0;
+    font: 400 16px 'Lato', sans-serif;
+    color: #8b8b8b;
+}
+.post p {
+    line-height: 24px;
+    margin: 0;
+}
+.post img {
+    padding-right: 6px;
+}
+/*--RESPONSIVENESSNESS--*/
+@media only screen and (min-width: 748px) {
+    #posts {
+        -webkit-column-count: 2;
+        -webkit-column-fill: auto;
+        -moz-column-count: 2;
+        -moz-column-fill: auto;
+        column-count: 2;
+        column-fill: auto;
+    }
+}
+ @media only screen and (max-width: 812px) {
+    header > div.content {
+        padding: 25px 0 30px 0;
+    }
+    /*--NAV--*/
+    .nav-toggle {
+        margin-top: 18px;
+        padding: 10px 35px 16px 0px;
+        float: right;
+    }
+    .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+      height: 3px;
+      width: 35px;
+      background: #c1c1c1;
+      position: absolute;
+      content: '';
+    }
+    .nav-toggle span:before {
+      top: -10px; 
+    }
+    .nav-toggle span:after {
+      bottom: -10px;
+    }
+    .dropdown{
+        display: none;
+    }
+    .dropdown ul {
+        margin: 0 auto;
+        clear: both;
+        width: 100%;
+    }
+    .dropdown ul li a{
+        margin-top: 30px;
+        padding: 0;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+    }
+    .expand {
+        display: block !important; 
+    }
+    /**/
+    #banner h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    #banner {
+        background: white;
+    }
+}
