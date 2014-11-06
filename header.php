@@ -9,7 +9,7 @@
 	<link rel="shortcut icon" type="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
-	<title><?php $title ? echo $title : echo "Quo"; ?></title>
+	<title><?php echo $title ? $title : "Quo"; ?></title>
 </head>
 <body>
 	<header>
