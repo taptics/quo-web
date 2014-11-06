@@ -19,7 +19,8 @@ if($_COOKIE["id"]){
 			setcookie("id", $auth["userId"], time() + (86400 * 30), "/");
 			header("Location:../index.php");
 		} else {
-			echo "Something went horribly wrong. Error message: ".$auth["error"];
+			echo "Something went horribly wrong. Error message: ";
+			print_r($auth["error"]);
 		}
 	}
 }
