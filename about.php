@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset ="UTF-8">
-	<meta name="viewport" content="width=device-width, initia-scale=1, maximum-scale=1, user-scalable=yes">
-	<meta name="description" content="Creativity in motion">
-	<meta name="apple-itunes-app" content="app-id=903216219">
-
-	<link rel="shortcut icon" type="favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="styles.css">
-
-	<title>Quo | About</title>
-</head>
-<body>
-	<header>
-		<div class="content">
-			<div id="logo"><a href="#"><img src="web-logo.svg" /></a></div>
-			<a class="nav-toggle" href="#"><span></span></a>
-			<nav class="dropdown">
-				<ul class="left">
-					<li><a href="/">Get the App</a></li>
-					<li><a href="/about">About</a></li>
-				</ul>
-
-				<ul class="right">
-					<li><a href="login.php">Login</a></li>
-					<li><a href="signup.php">Register</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+<?php $title = "Quo | About"; require('header.php'); require('classes/post.php'); require('classes/user.php'); ?>
 <div id="content">
 	<div class="full">
 		<div class="title"><h2>About</h2></div>
