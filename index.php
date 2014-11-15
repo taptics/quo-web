@@ -22,7 +22,7 @@
 		?>
 	<footer>
 		<ul>
-			<li><a href="/">Press</a></li>
+			<li><a href="/press">Press</a></li>
 			<li><a href="/">Terms &#38; Conditions</a></li>
 			<li><a href="/">Privacy Policy</a></li>
 		</ul>

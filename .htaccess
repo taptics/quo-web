@@ -1,4 +1,7 @@
 RewriteEngine On
 
 RewriteRule ^post/(.*)$ post.php?id=$1 [QSA,L]
-RewriteRule ^about$ about.html [QSA,L]
+RewriteRule ^about$ about.php [QSA,L]
+RewriteRule ^press$ press.php [QSA,L]
+RewriteRule ^privacy$ privacy.php [QSA,L]
+RewriteRule ^terms$ terms.php [QSA,L]
