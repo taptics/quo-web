@@ -11,12 +11,10 @@
 		$post = new Post;
 		$posts = $post->getAll();
 		foreach ($posts["posts"] as $post) { 
-			$lines_arr = preg_split('/\n|\r/',$post["text"]);
-			$line = count($lines_arr); 
 			$users = new User;
 			$user = $users->get($post["userId"]);
 		?>
-			<div class="post"><a href='/post/<?php echo $post["id"]; ?>'><h3><?php echo $post["title"]; ?><span><img src="icon.svg" /><?php echo $line; ?> lines</span><p class="author">Written by <?php if($user["user"]["name"]) { echo $user["user"]["name"]; } else {echo "Unknown"; } ?></p><p class="preview"><?php echo substr($post["text"], 0, 40); echo "...";?></p></h3></a></div>
+			<div class="post"><a href='/post/<?php echo $post["id"]; ?>'><h3><?php echo $post["title"]; ?><span><img src="icon.svg" /><?php echo $post["lines"]; ?> lines</span><p class="author">Written by <?php if($user["user"]["name"]) { echo $user["user"]["name"]; } else {echo "Unknown"; } ?></p><p class="preview"><?php echo substr($post["text"], 0, 40); echo "...";?></p></h3></a></div>
 		<?php
 		}
 		?>
